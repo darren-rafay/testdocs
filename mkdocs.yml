@@ -1,9 +1,7 @@
 # Project information
 site_name: Rafay Test Docs Site
 site_url: https://darren-rafay.github.io/testdocs/site
-site_description: >-
-  Testing Docs site features without publishing to production.
-  Enable features as needed.
+site_description: Testing Docs site features without publishing to production.
 
 # Repository
 
@@ -82,9 +80,9 @@ plugins:
       match_path: blog/posts/.*
 #      date_from_meta:
 #        as_creation: date
-#      categories:
-#        - categories
-#        - tags
+      categories:
+        - categories
+        - tags
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 #  - social:
