@@ -1,4 +1,109 @@
-site_name: My Docs
+# Project information
+site_name: Rafay Test Docs Site
+site_url: https://rafay.github.io/darren-yamasaki/testdocs
+site_description: >-
+  Testing Docs site features without publishing to production.
+  Enable features as needed.
 
+# Repository
+
+# Copyright
+copyright: Copyright &copy; 2017-2023 Rafay Systems
+
+# Configuration
 theme:
   name: material
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+#  - social:
+#      cards_layout_dir: social_cards_layouts
+#      cards_layout: custom
+
+# Customization
+extra:
+  generator: false
+  # analytics:
+    # provider: google
+    # property: G-KT7TYDFC8D
+  social:
+    - icon: fontawesome/solid/house
+      link: https://rafay.co/
+    - icon: fontawesome/solid/desktop
+      link: https://console.rafay.dev
+    - icon: fontawesome/brands/github
+      link: https://github.com/rafayopen
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/rafaysystemsinc
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/rafay-systems/
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >-
+          Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/darren-rafay/testrepo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+
+# Table of Contents
+nav:
+  - Home: index.md
+  - Get Started/Tutorials: learn/overview.md
+  - Recipes: recipes/overview.md
+  - Releases: releasenotes/overview.md
+  - Contact: contact/overview.md
+  - Blogs: blog/index.md

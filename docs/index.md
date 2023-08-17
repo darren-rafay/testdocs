@@ -1,6 +1,9 @@
-# Welcome to MkDocs
+---
+title: Learn KOP - Welcome to the Rafay Test Docs Site
+description: The Rafay Test Docs Site is a private GitHub website for testing Material and MKDocs features without publishing to the production site.
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The Rafay Test Docs Site is a private GitHub website for testing Material and MKDocs features without publishing to the production site.
 
 ## Commands
 
