@@ -77,9 +77,9 @@ markdown_extensions:
 # Plugins
 plugins:
   - blog
-  - rss
-#  - rss:
-#      match_path: blog/posts/.*
+#  - rss
+  - rss:
+      match_path: blog/posts/.*
 #      date_from_meta:
 #        as_creation: date
 #      categories:
