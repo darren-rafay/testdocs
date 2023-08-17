@@ -13,19 +13,34 @@ copyright: Copyright &copy; 2017-2023 Rafay Systems
 # Configuration
 theme:
   name: material
+  language: en
+  features:
+    - tabs
+    - instant
+    - navigation.tabs
+    - toc.follow
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - announce.dismiss
 
 # Extensions
 markdown_extensions:
-  - admonition
-  - attr_list
-  - codehilite:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
       guess_lang: false
       linenums: true
-  - def_list
-  - footnotes
-  - md_in_html
-  - meta
-  - toc:
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.md_in_html
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
       permalink: true
   - pymdownx.arithmatex
   - pymdownx.betterem:
@@ -62,6 +77,14 @@ markdown_extensions:
 # Plugins
 plugins:
   - blog
+#  - rss
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 #  - social:
@@ -71,9 +94,22 @@ plugins:
 # Customization
 extra:
   generator: false
-  # analytics:
-    # provider: google
-    # property: G-KT7TYDFC8D
+  analytics:
+    provider: google
+    property: G-KT7TYDFC8D
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/darren-rafay/testrepo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
   social:
     - icon: fontawesome/solid/house
       link: https://rafay.co/
@@ -85,19 +121,6 @@ extra:
       link: https://twitter.com/rafaysystemsinc
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/rafay-systems/
-  feedback:
-    title: Was this page helpful?
-    ratings:
-      - icon: material/emoticon-happy-outline
-        name: This page was helpful
-        data: 1
-        note: >-
-          Thanks for your feedback!
-      - icon: material/emoticon-sad-outline
-        name: This page could be improved
-        data: 0
-        note: >-
-          Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/darren-rafay/testrepo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 
 # Table of Contents
 nav:
@@ -106,4 +129,5 @@ nav:
   - Recipes: recipes/overview.md
   - Releases: releasenotes/overview.md
   - Contact: contact/overview.md
-  - Blogs: blog/index.md
+  - Blogs: 
+      - blog/index.md
