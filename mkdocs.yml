@@ -77,14 +77,14 @@ markdown_extensions:
 # Plugins
 plugins:
   - blog
-#  - rss
-  - rss:
-      match_path: blog/posts/.*
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  - rss
+#  - rss:
+#      match_path: blog/posts/.*
+#      date_from_meta:
+#        as_creation: date
+#      categories:
+#        - categories
+#        - tags
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 #  - social:
