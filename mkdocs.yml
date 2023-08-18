@@ -1,118 +1,24 @@
 # Project information
+site_description: Rafay Test Docs site
 site_name: Rafay Test Docs Site
-site_description: Testing Docs site features without publishing to production.
 site_url: https://darren-rafay.github.io/testdocs/site
-site_author: dyamasaki
-
-# Copyright
-copyright: Copyright &copy; 2017-2023 Rafay Systems
 
 # Configuration
 theme:
   name: material
-  language: en
-  features:
-    - tabs
-    - instant
-    - navigation.tabs
-    - toc.follow
-    - content.code.copy
-    - navigation.footer
-    - navigation.indexes
-    - navigation.path
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - navigation.tracking
-    - announce.dismiss
-
-# Extensions
-markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.codehilite:
-      guess_lang: false
-      linenums: true
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.md_in_html
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
-      permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  # - pymdownx.highlight:
-  #     linenums_style: pymdownx-inline
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      check_paths: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
 
 # Plugins
 plugins:
-  - blog
+  - blog:
+      enabled: true
+      blog_dir: blog/
   - rss:
       match_path: .*
-#      use_git: false
-  - search:
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-#  - social:
-#      cards_layout_dir: social_cards_layouts
-#      cards_layout: custom
-
-# Customization
-extra:
-  generator: false
-  analytics:
-    provider: google
-    property: G-KT7TYDFC8D
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/darren-rafay/testrepo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
-  social:
-    - icon: fontawesome/solid/house
-      link: https://rafay.co/
-    - icon: fontawesome/solid/desktop
-      link: https://console.rafay.dev
-    - icon: fontawesome/brands/github
-      link: https://github.com/rafayopen
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/rafaysystemsinc
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/rafay-systems/
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 
 # Table of Contents
 nav:

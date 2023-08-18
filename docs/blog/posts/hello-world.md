@@ -1,6 +1,5 @@
 ---
-title: Hello World
-summary: A brief description of the document.
+draft: false
 date: 2023-08-17
 categories:
     - Hello
@@ -8,8 +7,6 @@ categories:
 tags:
     - Foo
     - Bar
-links:
-    - learn/overview.md
 ---
 
 # Hello world!
