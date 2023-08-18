@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/blog/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/blog/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/blog/2023/08/17/hello-world/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/blog/2023/08/17/hello-world/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/contact/overview/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/contact/overview/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/learn/overview/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/learn/overview/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/recipes/overview/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/recipes/overview/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/releasenotes/overview/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/releasenotes/overview/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/blog/archive/2023/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/blog/archive/2023/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/blog/category/world/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/blog/category/world/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://darren-rafay.github.io/testdocs/site/blog/category/hello/</loc>
+         <loc>https://darren-rafay.github.io/testdocs/blog/category/hello/</loc>
          <lastmod>2023-08-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
