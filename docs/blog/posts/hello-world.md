@@ -1,4 +1,6 @@
 ---
+title: Hello World
+summary: A brief description of the document.
 date: 2023-08-17
 categories:
     - Hello

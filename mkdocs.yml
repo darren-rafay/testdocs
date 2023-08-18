@@ -1,9 +1,8 @@
 # Project information
 site_name: Rafay Test Docs Site
-site_url: https://darren-rafay.github.io/testdocs/site
 site_description: Testing Docs site features without publishing to production.
-
-# Repository
+site_url: https://darren-rafay.github.io/testdocs/site
+site_author: dyamasaki
 
 # Copyright
 copyright: Copyright &copy; 2017-2023 Rafay Systems
@@ -75,14 +74,9 @@ markdown_extensions:
 # Plugins
 plugins:
   - blog
-#  - rss
   - rss:
-      match_path: blog/posts/.*
-#      date_from_meta:
-#        as_creation: date
-      categories:
-        - categories
-        - tags
+      match_path: .*
+#      use_git: false
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 #  - social:
